@@ -7,19 +7,17 @@ const client = twilio(
 const callNumber = async (toNumber) => {
   const twiml = `
     <Response>
-      <Say voice="Polly.Kanya" language="th-TH">
-        สวัสดีค่ะ
-        <Pause length="1"/>
-        โปรโมชั่นพิเศษจาก PG DOG
-        <Pause length="1"/>
-        ฝากแปดสิบแปด รับหนึ่งร้อยแปดสิบแปด
-        <Pause length="1"/>
-        ทำเทิร์นสี่เท่า
-        <Pause length="1"/>
-        ถอนได้สูงสุดหกร้อยแปดสิบแปดบาท
-        <Pause length="1"/>
-        อย่าลืมมารับโปรนะคะ
-      </Say>
+      <Say voice="Polly.Kanya" language="th-TH">สวัสดีค่ะ</Say>
+      <Pause length="1"/>
+      <Say voice="Polly.Kanya" language="th-TH">โปรโมชั่นพิเศษจาก PG DOG</Say>
+      <Pause length="1"/>
+      <Say voice="Polly.Kanya" language="th-TH">ฝากแปดสิบแปด รับหนึ่งร้อยแปดสิบแปด</Say>
+      <Pause length="1"/>
+      <Say voice="Polly.Kanya" language="th-TH">ทำเทิร์นสี่เท่า</Say>
+      <Pause length="1"/>
+      <Say voice="Polly.Kanya" language="th-TH">ถอนได้สูงสุดหกร้อยแปดสิบแปดบาท</Say>
+      <Pause length="1"/>
+      <Say voice="Polly.Kanya" language="th-TH">อย่าลืมมารับโปรนะคะ</Say>
       <Hangup/>
     </Response>
   `;
