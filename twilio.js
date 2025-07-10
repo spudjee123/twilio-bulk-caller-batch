@@ -7,10 +7,17 @@ const client = twilio(
 const callNumber = async (toNumber) => {
   const twiml = `
     <Response>
-      // ลองใช้เสียงพื้นฐานแทน Polly
-      <Say language="th-TH">
-        สวัสดีค่ะ นี่คือการทดสอบระบบค่ะ
-      </Say>
+      <Say voice="Polly.Kanya">สวัสดีค่ะ</Say>
+      <Pause length="1"/>
+      <Say voice="Polly.Kanya">โปรโมชั่นพิเศษจาก PG DOG</Say>
+      <Pause length="1"/>
+      <Say voice="Polly.Kanya">ฝากแปดสิบแปด รับหนึ่งร้อยแปดสิบแปด</Say>
+      <Pause length="1"/>
+      <Say voice="Polly.Kanya">ทำเทิร์นสี่เท่า</Say>
+      <Pause length="1"/>
+      <Say voice="Polly.Kanya">ถอนได้สูงสุดหกร้อยแปดสิบแปดบาท</Say>
+      <Pause length="1"/>
+      <Say voice="Polly.Kanya">อย่าลืมมารับโปรนะคะ</Say>
       <Hangup/>
     </Response>
   `;
