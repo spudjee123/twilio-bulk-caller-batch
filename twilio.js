@@ -9,7 +9,7 @@ const callNumber = async (toNumber) => {
     <Response>
       <Say voice="th-TH-Standard-A" language="th-TH">สวัสดีค่ะ</Say>
       <Pause length="1"/>
-      <Say voice="th-TH-Standard-A" language="th-TH">โปรโมชั่นพิเศษจาก PG DOG</Say>
+      <Say voice="th-TH-Standard-A" language="th-TH">โปรโมชั่นพิเศษจาก พีจี ด็อก</Say>
       <Pause length="1"/>
       <Say voice="th-TH-Standard-A" language="th-TH">ฝากแปดสิบแปด รับหนึ่งร้อยแปดสิบแปด</Say>
       <Pause length="1"/>
