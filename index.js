@@ -4,6 +4,7 @@ const { callNumber } = require('./twilio');
 
 const app = express();
 app.use(bodyParser.json());
+app.use(express.static('public')); 
 
 app.post('/call', async (req, res) => {
   try {
